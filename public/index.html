@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barebone chat</title>
+    <title>Vini Mini chat</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="/script.js" defer></script>
@@ -13,14 +13,19 @@
   <body>
     <main>
       <section>
-
-        <img src="/mep-3stappen.webp" alt="inlogscherm" class="inlog-background" />
-        <h1>Le Chat <span>waar je niet weet met wie je chat...</span></h1>
+        <img class="vinimini-logo" src="/Logo-vini.png" alt="viniminilogo" />
+        <h1>Mini Chat <span>Connect met andere ouders...</span></h1>
 
         <!-- State messages -->
         <span class="loading">Berichten aan het inladen...</span>
-        <span class="empty">Er zijn nog geen berichten hier, typ iets om te kijken of er iemand reageert.</span>
-        <span class="offline">Er gaat iets mis met de verbinding, we proberen de connectie te herstellen...</span>
+        <span class="empty"
+          >Er zijn nog geen berichten hier, typ iets om te kijken of er iemand
+          reageert.</span
+        >
+        <!-- <span class="offline"
+          >Er gaat iets mis met de verbinding, we proberen de connectie te
+          herstellen...</span
+        > -->
 
         <ul></ul>
 

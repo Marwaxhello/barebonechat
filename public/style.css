@@ -1,3 +1,19 @@
+* {
+  font-family: montserrat;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --yellow: #f4eb34;
+  --Aqua-green: #73aea6;
+  --Black: #000000;
+  --Grey: #fafafa;
+  --Lightblue: #daeeee;
+  --Darkblue: #152a42;
+  --LightGreen: #d5edee;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -6,13 +22,15 @@ body {
   overflow: hidden;
   min-height: 100vh;
   min-width: 100vw;
-  /* background: rgb(239, 238, 238); */
-  background: #73aea6 ;
-  
+  background-color: var(--LightGreen);
   background-size: 200% 200%;
   animation: movement 30s ease infinite alternate-reverse;
 }
 
+.vinimini-logo {
+  margin: 1em;
+  width: 6em;
+}
 
 main {
   margin: 0;
@@ -24,6 +42,11 @@ main {
   align-items: center;
 }
 
+span {
+  font-size: 0.8rem;
+  color: var(--Darkblue);
+}
+
 section {
   width: 20rem;
   height: 30rem;
@@ -31,27 +54,26 @@ section {
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(1rem);
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0.8rem 0.8rem 1.6rem 0 rgba(206, 205, 205, 0.5), -0.8rem -0.8rem 1.6rem 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(115,173,166);
+  box-shadow: 0.8rem 0.8rem 1.6rem 0 rgb(115,173,166),
+    -0.8rem -0.8rem 1.6rem 0 rgb(115,173,166);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 section h1 {
-  margin: 0;
+  margin-left: 3em;
   padding: 0;
-  padding-top: 1rem;
-  font-weight: lighter;
-  text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: var(--Aqua-green);
 }
 
 section h1 span {
   font-size: 0.5rem;
   display: inline-block;
   width: 4.5rem;
-  color: #F4EB34;
+  color: #0000;
   text-transform: lowercase;
 }
 
@@ -81,7 +103,7 @@ section form {
   display: flex;
 }
 
-section form input[type='text'] {
+section form input[type="text"] {
   margin: 0;
   padding: 0 1rem;
   border: none;
@@ -114,7 +136,7 @@ section form > button span {
 }
 
 section form > button::after {
-  content: '⇒';
+  content: "⇒";
 }
 
 section form > button:hover {
